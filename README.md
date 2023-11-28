@@ -9,7 +9,7 @@ This project explores emotion recognition using EEG signals through two deep lea
 
 - `3D CNN.ipynb`: Implementation of the 3D CNN model for EEG-based emotion recognition.
 - `3DCNN model structure.ipynb`: Detailed structure and layers of the 3D CNN model.
-- `4D-CRNN.ipynb` and `4D_CRNN.ipynb`: Two versions of the 4D-CRNN model implementation.
+- `4D-CRNN.ipynb`: Two versions of the 4D-CRNN model implementation.
 - `SEED-IV_analysis.py`: Script for analyzing the SEED-IV dataset used in the project.
 - `README.md`: Documentation of the project (this file).
 
