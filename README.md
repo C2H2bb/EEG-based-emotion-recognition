@@ -1,18 +1,38 @@
 # EEG-based-emotion-recognition
 
 
-Currently, the loading of the data set, data visualization, and data analysis have been completed, and the model is still under construction.
+## Introduction
 
-## Contents
+This project explores emotion recognition using EEG signals through two deep learning models: a 3-dimensional Convolutional Neural Network (3D CNN) and a 4-dimensional Convolutional Recurrent Neural Network (4D CRNN). Our approach focuses on transforming differential entropy features from various channels into a 4D structure, enabling the training of an intricate deep model.
 
-1. [Labels Explanation](#labels-explanation)
-2. [Raw EEG Data](#raw-eeg-data)
-3. [Processed EEG Data](#processed-eeg-data)
-4. [Raw Eye Data](#raw-eye-data)
-5. [Processed Eye Data](#processed-eye-data)
-6. [Visualization](#visualization)
-7. [References](#references)
+## Project Structure
 
+- `3D CNN.ipynb`: Implementation of the 3D CNN model for EEG-based emotion recognition.
+- `3DCNN model structure.ipynb`: Detailed structure and layers of the 3D CNN model.
+- `4D-CRNN.ipynb` and `4D_CRNN.ipynb`: Two versions of the 4D-CRNN model implementation.
+- `SEED-IV_analysis.py`: Script for analyzing the SEED-IV dataset used in the project.
+- `README.md`: Documentation of the project (this file).
+
+## Research Summary
+
+**Authors:** Yichen Jiao, Siyu Zhang (Lakehead University)
+
+**Abstract:** Our study introduces both traditional 3D CNN and innovative 4D CRNN models for EEG-based emotion recognition. We demonstrate the superior performance of these models in identifying various emotional states compared to existing methods.
+
+### Key Sections
+
+1. **Introduction**: Highlights the significance of EEG in affective computing and emotion recognition.
+2. **3D CNN Modeling**: Describes the architecture and functionality of the 3D CNN model.
+3. **4D Feature Organization**: Discusses the methodology of organizing EEG signals into a 4D structure.
+4. **4D CRNN Modeling**: Details the structure and process of the 4D CRNN model.
+5. **Dataset Analysis**: Explains the dataset and its importance for model validation.
+6. **Environment Description**: Describes the computational environment used for experiments.
+7. **Results and Discussion**: Presents the findings and effectiveness of the models.
+8. **Conclusion**: Summarizes the study and discusses potential future research directions.
+
+## Dataset and Analysis
+
+We utilized a comprehensive collection of EEG and eye-tracking data sourced from 15 subjects, focusing on four emotional states. The dataset was structured into 45 sessions, allowing for a robust evaluation of our models' performance.
 ## Labels Explanation
 
 In the dataset, trials are labeled based on the emotions they are associated with:
@@ -64,6 +84,24 @@ Each of the above datasets is loaded from `.mat` files and then converted to pan
 
 Creates plots to visualize the EEG data for better understanding:
 - Time Series for EEG Channel FP1: Represents the EEG signals over time for the `FP1` channel.
+
+
+### Data Analysis Highlights
+
+- **EEG Signal Visualization**: Includes time series representation of EEG channels (e.g., FP1).
+- **Frequency Band Analysis**: Examines EEG signals across different frequency bands (delta, theta, alpha, beta, gamma).
+
+## Results
+
+Our experimental results showcase the effectiveness of both 3D CNN and 4D CRNN models:
+
+- The 3D CNN model achieved a maximum accuracy of approximately 78%.
+- The 4D CRNN model reached an accuracy of up to 95%, with an average of 81.9%.
+
+## Conclusion
+
+The study introduces effective frameworks for EEG-based emotion recognition, demonstrating their potential in various affective computing applications. Future research may focus on model optimization for real-time applications and integration of more diverse data.
+
 
 ## References
 
